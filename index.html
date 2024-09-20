@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to external CSS file -->
+</head>
+
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <img src="logo.png" id="logoRevo" alt="RevoU Logo">
+                <div class="button">
+                    <li><a href="#home" id="homeButton">Home</a></li>
+                    <li><a href="#profile">Our Profile</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#message" id="messageButton">Message Us</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <div id="home" class="welcome">
+        <h1 id="welcome">Hi, Welcome To Website</h1>
+        <p id="welcome">Ini adalah website latihan pertama</p>
+    </div>
+
+    <section id="headquarter">
+        <h2 id="headquarterText">Our Headquarter</h2>
+        <div class="locations">
+            <div>Jakarta</div>
+            <div>Bandung</div>
+            <div>Surabaya</div>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <h2 id="profileText">Our Profile</h2>
+
+        <section class="about-company">
+            <h3>About the Company</h3>
+            <p>Our company is a leader in providing cutting-edge solutions for businesses of all sizes. We are dedicated
+                to offering top-notch services and ensuring customer satisfaction.</p>
+        </section>
+
+        <section class="vision-mission">
+            <h3>Our Vision and Mission</h3>
+            <p><strong>Vision:</strong> To be the leader in our industry by providing unmatched service and quality.</p>
+            <p><strong>Mission:</strong> To deliver top-tier products and services with integrity, innovation, and a
+                customer-first approach.</p>
+        </section>
+    </section>
+
+    <section id="message" class="message-form">
+        <h2>Message Us</h2>
+        <div style="display: flex; justify-content: space-between;">
+            <form id="contactForm" onsubmit="return validateForm()" style="width: 45%;">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="date">Tanggal Lahir:</label>
+                <input type="date" id="date" name="date">
+
+                <label for="gender">Jenis Kelamin:</label>
+                <input type="radio" id="male" name="gender" value="Laki-Laki"> Laki-Laki
+                <input type="radio" id="female" name="gender" value="Perempuan"> Perempuan
+
+                <br><br>
+                <label for="messageText">Pesan:</label>
+                <textarea id="messageText" name="message"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+
+            <div id="formOutput" style="width: 45%; border: 1px solid black; padding: 10px;">
+                <p><b>Current time:</b> <span id="currentTime"></span></p>
+                <p><b>Nama:</b> <span id="outputName"></span></p>
+                <p><b>Tanggal Lahir:</b> <span id="outputDate"></span></p>
+                <p><b>Jenis Kelamin:</b> <span id="outputGender"></span></p>
+                <p><b>Pesan:</b> <span id="outputMessage"></span></p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <p>Created by RevoU</p>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

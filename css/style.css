@@ -1,0 +1,215 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    width: 98%;
+    z-index: 1000;
+}
+
+nav {
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.button {
+    display: flex;
+}
+
+/* Navigation links */
+.button li {
+    list-style: none;
+}
+
+.button li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #333;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    transition: background-color 0.3s ease;
+}
+
+#home {
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 61px;
+}
+
+#headquarter {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 1px solid black;
+}
+
+#profile {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 1px solid black;
+}
+
+#profileText {
+    padding-left: 20px;
+    top: 0;
+}
+
+#headquarterText {
+    padding-left: 20px;
+    top: 0;
+}
+
+#welcome {
+    padding-left: 20px;
+    top: 0;
+}
+
+#homeButton {
+    border-radius: 5px 0px 0px 5px;
+}
+
+#messageButton {
+    border-radius: 0px 5px 5px 0px;
+}
+
+.button li a:hover {
+    background-color: #f0f0f0;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    padding: 10px 100px;
+    color: #333;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+#logoRevo {
+    width: 40px;
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Banner */
+.banner-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Locations Section */
+.locations {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.locations div {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+}
+
+/* Footer */
+footer {
+    border: 1px solid black;
+    text-align: end;
+    padding: 10px;
+}
+
+.message-form {
+    margin: 50px;
+}
+
+.message-form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.message-form input[type="text"],
+.message-form input[type="date"],
+.message-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.message-form input[type="radio"] {
+    margin-right: 5px;
+}
+
+.message-form textarea {
+    height: 80px;
+}
+
+.message-form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.message-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#formOutput {
+    font-size: 16px;
+}
+
+#formOutput p {
+    margin: 5px 0;
+}
